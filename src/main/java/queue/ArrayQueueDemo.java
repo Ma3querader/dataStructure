@@ -16,6 +16,7 @@ public class ArrayQueueDemo {
         System.out.println("---------");
         System.out.println(queue.getQueue());
         System.out.println(queue.getQueue());
-        System.out.println(queue.getQueue());
+        System.out.println("---------");
+        queue.showQueue();
     }
 }
