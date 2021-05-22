@@ -4,6 +4,8 @@ package queue;
  * @Author: panyusheng
  * @Date: 2021/5/20
  * @Version 1.0
+ *
+ * 队列
  */
 public class ArrayQueue {
 

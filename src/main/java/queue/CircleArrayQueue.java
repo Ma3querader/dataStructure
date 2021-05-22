@@ -4,6 +4,8 @@ package queue;
  * @Author: panyusheng
  * @Date: 2021/5/21
  * @Version 1.0
+ *
+ * 环形队列
  */
 public class CircleArrayQueue {
 
