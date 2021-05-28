@@ -12,7 +12,7 @@ public class SelectSort {
         int[] arr = {101, 34, 119, 1};
         System.out.println(Arrays.toString(arr));
 
-        // 进行 n - 1 趟，每趟比较头 - 1
+        // 进行 n - 1 趟，每趟比较次数 - 1
         for (int i = 0; i < arr.length - 1; i++) {
             int minIndex = i;
             int min = arr[i];
