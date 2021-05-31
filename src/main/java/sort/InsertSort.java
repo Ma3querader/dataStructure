@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @Author: panyusheng
  * @Date: 2021/5/31
  * @Version 1.0
- * 
+ *
  * 插入排序
  */
 public class InsertSort {
@@ -29,6 +29,7 @@ public class InsertSort {
                 arr[insertIndex + 1] = insertVal;
             }
         }
+        System.out.println(Arrays.toString(arr));
     }
 
 }
