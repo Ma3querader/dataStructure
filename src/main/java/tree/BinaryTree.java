@@ -38,4 +38,25 @@ public class BinaryTree {
         }
     }
 
+    public HeroNode preOrderSearch(int no) {
+        if (this.root != null) {
+            return this.root.preOrderSearch(no);
+        } else {
+            System.out.println("二叉树为空");
+            return null;
+        }
+    }
+
+    public void delNode(int no) {
+        if (this.root != null) {
+            if(root.getNo() == no) {
+                root = null;
+            } else {
+                root.delNode(no);
+            }
+        } else {
+            System.out.println("二叉树为空");
+        }
+    }
+
 }

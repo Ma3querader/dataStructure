@@ -20,11 +20,21 @@ public class BinaryTreeDemo {
         root.setLeft(node2);
         root.setRight(node3);
         node2.setLeft(node4);
-        node4.setRight(node5);
+        node3.setRight(node5);
 
 //        tree.preOrder();
 //        tree.infixOrder();
-        tree.postOrder();
+//        tree.postOrder();
+
+//        HeroNode heroNode = tree.preOrderSearch(3);
+//        System.out.println(heroNode);
+
+
+        tree.preOrder();
+        System.out.println("--------------");
+        tree.delNode(2);
+        tree.preOrder();
+
 
     }
 }

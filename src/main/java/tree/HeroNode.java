@@ -89,6 +89,40 @@ public class HeroNode {
         System.out.println(this);
     }
 
+    public HeroNode preOrderSearch(int no) {
+        if (this.no == no) {
+            return this;
+        }
+        HeroNode res = null;
+        if (this.left != null) {
+            res = this.left.preOrderSearch(no);
+        }
+        if (res != null) {
+            return res;
+        }
+        if (this.right != null) {
+            res = this.right.preOrderSearch(no);
+        }
+        return res;
+    }
+
+    public void delNode(int no) {
+        if (this.left != null && this.left.no == no) {
+            this.left = null;
+            return;
+        }
+        if(this.right != null && this.right.no == no) {
+            this.right = null;
+            return;
+        }
+        if (this.left != null) {
+            this.left.delNode(no);
+        }
+        if (this.right != null) {
+            this.right.delNode(no);
+        }
+    }
+
 
 
 
